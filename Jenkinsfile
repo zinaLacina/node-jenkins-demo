@@ -26,7 +26,9 @@ pipeline {
             // environment {
             //     DOCKER_HOST_CREDENTIALS = credentials('demo-docker')
             // }
-            echo "Deploying" 
+            steps {
+                echo "Deploying"
+            }
         }
     }
 }
