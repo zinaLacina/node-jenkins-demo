@@ -1,4 +1,11 @@
 pipeline {
+    environment {
+        ENV_VARIABLE = 'Environment'
+    }
+    parameters {
+        string(description: 'Parameter', name: 'PARAMETER_VARIABLE', defaultValue: 'Parameter')
+
+    }
     agent any
     stages {
         stage('Tests') {
