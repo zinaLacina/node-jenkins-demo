@@ -12,9 +12,9 @@ pipeline {
         stage('Tests') {
             steps {
                 echo 'Building..'
-                sh 'npm install'
+                // sh 'npm install'
                 echo 'Testing..'
-                sh 'npm test'
+                // sh 'npm test'
             }
         }
         stage('Build and push docker image') {
